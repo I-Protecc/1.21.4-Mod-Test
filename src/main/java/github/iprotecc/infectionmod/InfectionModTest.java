@@ -1,7 +1,9 @@
 package github.iprotecc.infectionmod;
 
+import github.iprotecc.infectionmod.init.ItemInit;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +21,12 @@ public class InfectionModTest implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Loading...");
+		ItemInit.load();
+	}
+
+	public static Identifier id(String path)
+	{
+		return Identifier.of(MOD_ID, path);
 	}
 }
