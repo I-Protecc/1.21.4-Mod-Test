@@ -1,5 +1,6 @@
 package github.iprotecc.infectionmod;
 
+import github.iprotecc.infectionmod.init.BlockInit;
 import github.iprotecc.infectionmod.init.ItemInit;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,6 +24,7 @@ public class InfectionModTest implements ModInitializer {
 
 		LOGGER.info("Loading...");
 		ItemInit.load();
+		BlockInit.load();
 	}
 
 	public static Identifier id(String path)

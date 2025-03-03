@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "infectionmod:block/example_block" }
+  }
+}

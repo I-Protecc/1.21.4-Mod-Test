@@ -1,0 +1,6 @@
+{
+  "parent": "infectionmod:block/example_block",
+  "textures": {
+    "layer0": "infectionmod:block/example_block"
+  }
+}
