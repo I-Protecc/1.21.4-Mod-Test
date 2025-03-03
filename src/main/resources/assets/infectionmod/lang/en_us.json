@@ -1,6 +1,6 @@
 {
   "item.infectionmod.example_item": "Example Item",
   "item.infectionmod.example_food": "Example Food",
-  "item.infectionmod.example_block": "Example Block"
+  "block.infectionmod.example_block": "Example Block"
 
 }
