@@ -1,5 +1,6 @@
 package github.iprotecc.infectionmod.init;
 
+import github.iprotecc.infectionmod.Blocks.ExampleBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -12,7 +13,7 @@ import java.util.function.Function;
 
 public class BlockInit {
 
-    public static final Block EXAMPLE_BLOCK = register("example_block", Block::new, Block.Settings.create().strength(4.0f));
+    public static final Block EXAMPLE_BLOCK = register("example_block", ExampleBlock::new, Block.Settings.create().strength(4.0f));
 
     private static Block register(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         final Identifier identifier = Identifier.of("infectionmod", path);
